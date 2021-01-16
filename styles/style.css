@@ -4,7 +4,93 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 0;
+  background-image: url(../images/bgtile.png);
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin: 30px;
+  max-width: 900px;
+  margin: 80px;
+}
+
+
+
+h2 {
+  color: #1c5380;
+}
+
+
+
+.card {
+  background-image: url(../images/frame.png);
+  background-repeat: no-repeat;
+  padding: 20px 35px;
+  line-height: 1.8em;
+}
+
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.column1 {
+  margin: 20px;
+}
+
+.column2 {
+  margin: 20px;
+}
+
+.mybutton {
+  margin: 20px;
+  padding: .8em;
+  color: white;
+  font-weight: bolder;
+  display: flex;
+  align-items:center;
+  justify-content: space-between;
+  width: 100px;
+  background: #1c5380;
+  cursor: pointer;
+  border-radius: 5px;
+  border-color: #1c5380;
+  background: linear-gradient( #1c5380, #06365f,);
+}
+
+
+.badges {
+  display: flex;
+  padding-top: 20px;
+}
+
+.badges  img {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #1c5380;
+  font-weight: bolder;
+  margin: 8px;
+}
+
+.footer {
+  margin: 10px 90px;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 12px;
 }
